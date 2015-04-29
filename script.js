@@ -1,8 +1,8 @@
 $(document).ready(function () {
 
-    $('#add-to-list').on('click', function addToList(item) {
-            $("ol#items").append("<li>" + item + "</li>");
-            console.log('bob');
+    $('#add-to-list').on('click', function addToList() {
+        var item = $("#item").val();
+        $("ol#items").append("<li>" + item + "</li>");
     });
 
 });
